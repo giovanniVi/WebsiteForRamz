@@ -20,13 +20,16 @@ body {
 }
 
 
-.header.h3 {
+.header h3 {
   font-size: 40px;
   background-color: black;
 
 }
 
-
+.borderdiv {
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 .navbar {
   overflow: hidden;
@@ -51,27 +54,11 @@ body {
 
 /* Column container */
 .row {   
-    display: flex;
-  
+  display: flex;  
+  margin-left: 12px;
+  margin-right: 12px;
 
-}
 
-/* Creates two cols */
-/* Sidebar/left column */
-.side {
-  background-color: #f1f1f1;
-  padding: 20px;
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; 
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
 }
 
 
@@ -86,17 +73,225 @@ body {
 
 /* Responsive layout */
 @media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
+  
+  * {
+    box-sizing: border-box;
   }
+ 
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-color: #0dcaf0;
+  }
+  
+  
+  .header h3 {
+    font-size: 30px;
+    background-color: black;
+  
+  }
+  
+  .borderdiv {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* nav bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+ 
+  /* Column container */
+  .row {   
+    display: flex;  
+    margin-left: 12px;
+    margin-right: 12px;
+  
+  
+  }
+  
+  /* Creates two cols */
+  /* Sidebar/left column */
+  .side {
+    background-color: #f1f1f1;
+    padding: 20px;
+    -ms-flex: 270px; /* IE10 */
+    flex: 270px;
+    max-width: 270px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 270px; 
+    flex: 270px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background:rgba(137, 196, 244, 1);
+  
+  }
+  
 }
 
 /* Responsive layout */
 @media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
+  
+  * {
+    box-sizing: border-box;
   }
+ 
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-color: #0dcaf0;
+  }
+  
+  
+  .header h3 {
+    font-size: 40px;
+    background-color: black;
+  
+  }
+  
+  .borderdiv {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* nav bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+ 
+  /* Column container */
+  .row {   
+    display: flex;  
+    margin-left: 12px;
+    margin-right: 12px;
+  
+  
+  }
+  
+  /* Creates two cols */
+  /* Sidebar/left column */
+  .side {
+    background-color: #f1f1f1;
+    padding: 20px;
+    -ms-flex: 300px; /* IE10 */
+    flex: 300px;
+    max-width: 300px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 700px; 
+    flex: 700px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background:rgba(137, 196, 244, 1);
+  
+  }
+  
 }
 
 /* i need to add a limit for larger screens */
+@media screen and (max-width: 1000px) {
+  * {
+    box-sizing: border-box;
+  }
+ 
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-color: #0dcaf0;
+  }
+  
+  
+  .header h3 {
+    font-size: 40px;
+    background-color: black;
+  
+  }
+  
+  .borderdiv {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  /* nav bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+ 
+  /* Column container */
+  .row {   
+    display: flex;  
+    margin-left: 12px;
+    margin-right: 12px;
+  
+  
+  }
+  
+  /* Creates two cols */
+  /* Sidebar/left column */
+  .side {
+    background-color: #f1f1f1;
+    padding: 20px;
+    -ms-flex: 300px; /* IE10 */
+    flex: 300px;
+    max-width: 300px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 700px; 
+    flex: 700px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background:rgba(137, 196, 244, 1);
+  
+  }
+  
+
+}
