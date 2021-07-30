@@ -270,8 +270,8 @@ body {
   .side {
     background-color: #f1f1f1;
     padding: 20px;
-    -ms-flex: 300px; /* IE10 */
-    flex: 300px;
+    -ms-flex: 150px; /* IE10 */
+    flex: 150px;
     max-width: 300px;
   }
   
